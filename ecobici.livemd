@@ -14,7 +14,7 @@ ecobici_api = "https://gbfs.mex.lyftbikes.com/gbfs/en/station_information.json"
 res = Req.get!(ecobici_api)
 
 body = Jason.decode!(res.body)
-# body["data"]["stations"] 
+# body["data"]["stations"]
 ```
 
 ## Step 2: Create station genserver
